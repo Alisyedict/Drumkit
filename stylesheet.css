@@ -1,0 +1,124 @@
+html {
+   
+    background: url('images/background.png');
+    background-size: cover; 
+
+
+}
+
+h1 {
+    font-size: 60px;
+    color: yellow;
+    animation: myAnimation 10s ease-in-out infinite;
+  }
+  
+  @keyframes myAnimation {
+    0% { font-size: 60px; }
+    50% { font-size: 70px; color: red; }
+    100% { font-size: 60px; }
+  }
+  
+
+
+
+
+
+h3{
+    font-size: 60px;
+    color: yellow;
+}    
+
+
+
+body,html {
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hkey{
+    display: block;
+    justify-content: center;
+
+
+}
+.heading {
+    color: aliceblue;
+    text-align: center;
+    font-size: small;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 15px;
+}
+.keys {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-right: lrem;
+    align-content: center;
+    min-height: 100vh;
+
+}
+
+
+.key { 
+    border: 4px solid black;
+    border-radius: .2rem;
+    margin : 1rem ;
+    font-size: 1.5rem;
+    margin-bottom: 15rem;
+transition:all 0.0s;    
+width: 20rem;
+text-align: center;
+color: rgb(0, 0, 0);
+background: rgb(255, 0, 0);
+transition: transform 1s;
+}
+
+
+.playing {
+    transform: scale (3);
+    border-color: white;
+    box-shadow: black;
+}
+
+kbd {
+    display: block;
+    font-size: 3rem;
+    width: auto;
+
+
+}
+.sounds {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem; 
+    color: rgb(251, 251, 4)
+}
+
+
+
+#container {
+    position: relative;
+  }
+  
+  #image {
+    opacity: 0.5;
+    position: relative;
+   top: -375px;
+    transform: translateX(800px);
+  }
+  
+  #image.active {
+    opacity: 1; 
+    box-shadow: 0 0 10px yellow; 
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+  }
+  
